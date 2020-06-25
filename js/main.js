@@ -1,97 +1,4 @@
 $(document).ready(function () {
-    $('.intro-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsiveClass: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
-        }
-    })
-
-    var introCarousel = $('.intro-carousel');
-    introCarousel.owlCarousel();
-
-    $('.right-arrow-btn').click(function () {
-        introCarousel.trigger('next.owl.carousel');
-
-    })
-
-    $('.left-arrow-btn').click(function () {
-        introCarousel.trigger('prev.owl.carousel');
-    })
-
-    $('.side-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsiveClass: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    })
-
-    var sideCarousel = $('.side-carousel');
-    sideCarousel.owlCarousel();
-
-    $('.stories-carousel').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        responsiveClass: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 2
-            }
-        }
-    })
-
-    var storiesCarousel = $('.stories-carousel');
-    storiesCarousel.owlCarousel();
-
-    $('.stories-right-arrow-btn').click(function () {
-        storiesCarousel.trigger('next.owl.carousel');
-
-    })
-
-    $('.stories-left-arrow-btn').click(function () {
-        storiesCarousel.trigger('prev.owl.carousel');
-    })
-
     $('.header-nav-toggle').on('click', function (e) {
         e.stopImmediatePropagation();
         const windowWidth = $(window).width();
@@ -109,6 +16,118 @@ $(document).ready(function () {
         const windowWidth = $(window).width();
         if (windowWidth < 768) {
             $('.header-nav').slideUp();
+        }
+    });
+
+    var phpChart = $('#phpChart');
+    var myChart = new Chart(phpChart, {
+        type: 'line',
+        data: {
+            datasets: [{
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#1D71B8'
+                ] 
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    },
+                    ticks: {
+                        display: false
+                    },
+                }]
+            }
+        }
+    });
+
+    var sqlChart = $('#sqlChart');
+    var myChart = new Chart(sqlChart, {
+        type: 'line',
+        data: {
+            datasets: [{
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#1D71B8'
+                ] 
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    },
+                    ticks: {
+                        display: false
+                    },
+                }]
+            }
+        }
+    });
+
+    var nginxChart = $('#nginxChart');
+    var myChart = new Chart(nginxChart, {
+        type: 'line',
+        data: {
+            datasets: [{
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#1D71B8'
+                ] 
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    },
+                    ticks: {
+                        display: false
+                    },
+                }]
+            }
+        }
+    });
+
+    var phpChart2 = $('#phpChart2');
+    var myChart = new Chart(phpChart2, {
+        type: 'line',
+        data: {
+            datasets: [{
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    '#1D71B8'
+                ] 
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    },
+                    ticks: {
+                        display: false
+                    },
+                }]
+            }
         }
     });
 

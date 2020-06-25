@@ -86,30 +86,33 @@
                 <div class='lg:w-2/3 w-full mt-6'>
                     <h2 class='text-4xl text-blue-1200 mb-4'>Services</h2>
                     <div class='flex flex-row justify-between flex-wrap'>
-                        <div class='w-56 border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
-                            <div class='flex flex-row p-4 justify-between items-start'>
-                                <p class='text-md text-purple-1200 opacity-75'>PHP 7.4</p>
-                                <img class='w-8 h-4 mt-1' src="./images/logos/php-logo.png" alt="php logo">
+                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                            <div class='flex flex-row pt-2 px-2 justify-between items-start'>
+                                <p class='text-md text-purple-1200 opacity-50'>PHP 7.4</p>
+                                <img class='w-8 h-4 mt-1 opacity-50' src="./images/logos/php-logo.png" alt="php logo">
                             </div>
-                            <canvas id="myChart" width="400" height="200"></canvas>
+                            <canvas id="phpChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='w-56  border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
-                            <div class='flex flex-row p-4 justify-between'>
-                                <p class='text-md text-purple-1200 opacity-75'>MuSQL 8</p>
+                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                            <div class='flex flex-row pt-2 px-2 justify-between'>
+                                <p class='text-md text-purple-1200 opacity-50'>MuSQL 8</p>
                                 <img src="./images/logos/mysql.png" alt="mySQL logo">
                             </div>
+                            <canvas id="sqlChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='w-56  border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
-                            <div class='flex flex-row p-4 justify-between'>
-                                <p class='text-md text-purple-1200 opacity-75'>NGINX</p>
+                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                            <div class='flex flex-row pt-2 px-2 justify-between'>
+                                <p class='text-md text-purple-1200 opacity-50'>NGINX</p>
                                 <img src="./images/logos/NGINX_logo_cmyk-01.png" alt="NGINX logo">
                             </div>
+                            <canvas id="nginxChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='w-56  border-2 border-gray-400 rounded-top-right-bottom-left mt-8'>
-                            <div class='flex flex-row p-4 justify-between'>
-                                <p class='text-md text-purple-1200 opacity-75'>PHP 7.4</p>
-                                <img class='w-8 h-4 mt-1' src="./images/logos/php-logo.png" alt="php logo">
+                        <div class='lg:w-64 w-full  border-2 border-gray-400 rounded-top-right-bottom-left mt-8'>
+                            <div class='flex flex-row pt-2 px-2 justify-between'>
+                                <p class='text-md text-purple-1200 opacity-50'>PHP 7.4</p>
+                                <img class='w-8 h-4 mt-1 opacity-50' src="./images/logos/php-logo.png" alt="php logo">
                             </div>
+                            <canvas id="phpChart2" width="400" height="120"></canvas>
                         </div>
                     </div>
                     <h2 class='text-4xl text-blue-1200 mb-4 mt-8'>Management</h2>
@@ -120,7 +123,7 @@
                                     <p class='text-lg text-dark-gray opacity-75'>Backups</p>
                                 </div>
                                 <div class='flex flex-row justify-end mt-12'>
-                                    <i class="far fa-envelope text-blue-color text-4xl"></i>
+                                    <i class="fas fa-bars text-blue-color text-4xl"></i>
                                 </div>
                             </div>
                             <div class='bg-white rounded-top-right-bottom-left p-4 shadow-lg lg:w-64 w-full mt-6 lg:mt-0 mr-10'>
@@ -136,7 +139,7 @@
                                     <p class='text-lg text-dark-gray opacity-75'>Health Center</p>
                                 </div>
                                 <div class='flex flex-row justify-end mt-12'>
-                                    <i class="far fa-envelope text-blue-color text-4xl"></i>
+                                    <i class="fal fa-tire text-blue-color text-4xl"></i>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +200,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class='text-sm text-dark-gray font-bold text-center mt-5 lg:mt-5'>View All</p>
+                        <a href=""><p class='text-sm text-dark-gray font-bold text-center mt-5 lg:mt-5'>View All</p></a>
                         <div class='flex flex-row justify-center'>
                             <div class='w-2 h-2 rounded-l-full rounded-r-full bg-blue-color text-vs flex justify-center items-center font-normal text-white'></div>
                             <div class='w-2 h-2 rounded-l-full rounded-r-full bg-dark-grey text-vs flex justify-center items-center ml-1 font-normal text-white'></div>
@@ -250,45 +253,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
-    <script>
-        var ctx = document.getElementById('myChart');
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    // label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
-    </script>
     <script src="js/main.js"></script>
     <script> AOS.init(); </script>
     <script src="https://kit.fontawesome.com/a8e3640a1c.js" crossorigin="anonymous"></script>
