@@ -1,0 +1,121 @@
+// Common
+@import 'includes/extend';
+@import 'includes/mixins';
+@import 'includes/variables';
+@import 'includes/global';
+@import 'includes/owl-carousel';
+@import 'includes/nav';
+@import 'includes/switch';
+
+// Layout
+@import 'layout/main';
+
+// Responsive
+@import 'layout/responsive';
+
+.text-line {
+  border-bottom: solid 2px gainsboro;
+  width: 110px;
+}
+
+.modal {
+  > div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+  }
+}
+
+select {
+  color: #a0aec0;
+  
+  &.selected {
+    color: #000;
+  }
+  
+  &:valid {
+    color: #000;
+  }
+}
+
+.rounded-xlg{
+  border-radius: 20px;
+}
+
+.border-grey{
+  border: 3px solid #E7E7E7;
+}
+
+.input-form{
+  
+  &::-webkit-input-placeholder {
+    font-size: 17px;
+    color: #D9D9D9;
+    font-weight: 600;
+  }
+  
+  &::-moz-placeholder {
+    font-size: 17px;
+    color: #D9D9D9;
+    font-weight: 600;
+  }
+  
+  &:-ms-input-placeholder {
+    font-size: 17px;
+    color: #D9D9D9;
+    font-weight: 600;
+  }
+  
+}
+
+.shadow-xl{
+  box-shadow: 4px 7px 73px #00000024;
+}
+
+.sm-img{
+  width: 12px;
+  height: 12px;
+}
+
+.px-22{
+  padding-left: 86px;
+  padding-right: 86px;
+}
+
+.arrow-color{
+  color:  #E7E7E7;
+}
+
+.cog-color{
+  color: #E5E5E5;
+}
+
+.h-xs{
+  height: 1px;
+}
+
+.w-xs{
+  width: 1px;
+}
+
+.w-md{
+  width: 2px;
+}
+
+.h-window{
+  height: 448px;
+}
+
+.rounded-top-right-bottom-left{
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.w-h-7{
+  width: 7px;
+  height: 7px;
+}
+
+.text-vs{
+  font-size: 10px;
+}

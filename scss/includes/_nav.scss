@@ -1,0 +1,37 @@
+.nav-link {
+    @extend %borderRB;
+    opacity: .8;
+    
+    &:after {
+        @include single-transition(all, 0.25s, ease-in-out);
+        width: 0;
+    }
+    
+    &.active {
+        opacity: 1;
+        
+        &:after {
+            width: 100%;
+        }
+    }
+    
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.sc-nav {
+    &.shadow {
+        .nav-link {
+            &:after {
+                background: #000;
+            }
+        }
+    }
+}
+
+.nav-blue{
+    background: transparent linear-gradient(99deg, #1D71B8 0%, #0D225A 100%) 0% 0% no-repeat padding-box;
+}

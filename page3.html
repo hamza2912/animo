@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 3</title>
+    <!-- Owl-Carousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='w-full overflow-hidden bg-white'>
+        <div class='lg:container lg:mx-auto lg:px-32 px-0 lg:my-32 my-0'>
+            <div class='bg-white rounded-r-lg shadow-xl flex lg:flex-row flex-col'>
+                <div class='lg:w-2/5 w-full bg-gradient-blue flex justify-center items-center py-10 lg:py-0'>
+                    <img src="./images/logos/Amino-Cloud-white.png" alt="Amino CLoud Image">
+                </div>
+                <div class='lg:w-3/5 w-full flex-col lg:py-20 py-16 lg:px-20 px-8'>
+                    <form>
+                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Configure your service</h2>
+                        <div class="mb-8 flex flex-row flex-wrap justify-between">
+                            <div class='border-grey rounded-xlg w-1/5 py-3 flex justify-center'>
+                                <img src="./images/logos/git-logo.png" alt="Git Logo">
+                            </div>
+                            <div class='border-grey rounded-xlg w-1/5 py-3 flex justify-center'>
+                                <img src="./images/logos/MB-logo.png" alt="mongoDB Logo">
+                            </div>
+                            <div class='border-grey rounded-xlg w-1/5 py-3 flex justify-center'>
+                                <img src="./images/logos/php-logo.png" alt="php Logo">
+                            </div>
+                            <div class='w-md lg:h-16 h-12 self-center bg-gray-400'></div>
+                            <div class='border-grey rounded-xlg w-1/5 py-3 flex justify-center'>
+                                <img src="./images/logos/node-logo.png" alt="node Logo">
+                            </div>
+                        </div>
+                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>What version of PHP?</h2>
+                        <div class="mb-8">
+                            <input class="w-full py-3 pl-6 border-grey rounded-xlg input-form focus:outline-none focus:shadow-outline-none" type="text" placeholder="PHP 7.4">
+                        </div>
+                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Public path</h2>
+                        <div class="mb-8">
+                            <input class="w-full py-3 pl-6 border-grey rounded-xlg input-form focus:outline-none focus:shadow-outline-none" id="text" type="text"
+                                placeholder="/path">
+                        </div>
+                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Deploying file or Git project</h2>
+                        <div class="mb-8 flex lg:flex-row flex-col justify-between text-blue-1200">
+                            <button class="py-3 lg:px-22 border-grey rounded-xlg input-form font-semibold lg:w-64 w-full">
+                                Zip <i class="fas fa-arrow-alt-up arrow-color"></i>
+                            </button>
+                            <button class="py-3 lg:px-22 border-grey rounded-xlg input-form font-semibold lg:w-64 w-full mt-2 lg:mt-0">
+                                Git <i class="fas fa-arrow-alt-up arrow-color"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="bg-blue-button hover:bg-blue-500 text-white font-semibold py-3 text-lg px-12 rounded-xlg lg:w-2/5 w-full" type="button">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script> AOS.init(); </script>
+    <script src="https://kit.fontawesome.com/a8e3640a1c.js" crossorigin="anonymous"></script>
+    <script data-cfasync src="https://kit.fontawesome.com/25daee8555.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
