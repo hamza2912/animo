@@ -597,4 +597,8 @@ select:valid {
   font-size: 10px;
 }
 
+.container-large {
+  max-width: 1640px;
+}
+
 /*# sourceMappingURL=styles.css.map */

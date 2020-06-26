@@ -28,11 +28,11 @@
 
 select {
   color: #a0aec0;
-  
+
   &.selected {
     color: #000;
   }
-  
+
   &:valid {
     color: #000;
   }
@@ -47,25 +47,25 @@ select {
 }
 
 .input-form{
-  
+
   &::-webkit-input-placeholder {
     font-size: 17px;
     color: #D9D9D9;
     font-weight: 600;
   }
-  
+
   &::-moz-placeholder {
     font-size: 17px;
     color: #D9D9D9;
     font-weight: 600;
   }
-  
+
   &:-ms-input-placeholder {
     font-size: 17px;
     color: #D9D9D9;
     font-weight: 600;
   }
-  
+
 }
 
 .shadow-xl{
@@ -118,4 +118,8 @@ select {
 
 .text-vs{
   font-size: 10px;
+}
+
+.container-large {
+  max-width: 1640px;
 }
