@@ -19,6 +19,13 @@ $(document).ready(function () {
         }
     });
 
+    $('.service a').on('click', function () {
+        $('.service a').removeClass('active-service');
+        $('.service a').removeClass('shadow-lg');
+        $(this).addClass('active-service');
+        $(this).addClass('shadow-lg');
+    });
+
     var phpChart = $('#phpChart');
     var myChart = new Chart(phpChart, {
         type: 'line',

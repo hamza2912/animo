@@ -21,93 +21,93 @@
 </head>
 
 <body>
-    <div class='w-full overflow-hidden'>
-        <nav class='py-8 nav-blue text-white'>
-            <div class='container mx-auto px-6'>
-                <div class='flex flex-row justify-between'>
-                    <div class='flex items-center'>
-                        <h2 class='lg:text-4xl text-2xl'>Administration</h2>
-                    </div>
-                    <div class='flex flex-row py-2 items-center'>
-                        <p class='mr-4 font-normal opacity-75 hidden lg:block'>John Dey</p>
-                        <a href="#profile">
-                            <img class='mr-2 w-8 h-8 header-nav-toggle' src="./images/icons/Avatar.png" alt="Avatar">
-                        </a>
-                        <div class='mr-4 w-xs h-6 bg-white opacity-75 hidden lg:block'></div>
-                        <div class='relative hidden lg:block'>
-                            <a href="#notifications">
-                                <i class="fal fa-bell mr-4"></i>
-                            </a>
-                            <div class='absolute w-2 h-2 rounded-l-full rounded-r-full bg-blue-color text-vs flex justify-center items-center ml-1 top-0'></div>
-                        </div>
-                        <a href="#settings">
-                            <i class="fal fa-cog cog-color font-medium"></i>
-                        </a>
-                    </div>
-                    <ul class='hidden text-sm font-semibold header-nav fixed left-0 px-10 pt-10 mt-12 pb-12 w-full nav-blue'>
-                        <li class="mr-8">
-                            <p class="mb-6 lg:mb-0 relative block" href="#services">John Dey</p>
-                        </li>
-                        <li class="mr-8">
-                            <a class="mb-6 lg:mb-0 nav-link relative block" href="#experience">
-                                <i class="fal fa-bell mr-2"></i>Notifications</a>
-                        </li>
-                    </ul>
+    <nav class='py-8 nav-blue text-white'>
+        <div class='container-large mx-auto px-6'>
+            <div class='flex flex-row justify-between'>
+                <div class='flex items-center'>
+                    <h2 class='lg:text-4xl text-2xl'>Administration</h2>
                 </div>
-                <div class='w-full h-xs my-3 bg-white'></div>
-                <div class='flex flex-start'>
-                    <ul class='flex lg:flex-row flex-col text-lg'>
-                        <li class='mr-5 font-bold flex flex-row items-center'>
-                            <a href="#customer">Customers</a>
-                            <div class='w-3 h-3 rounded-l-full rounded-r-full bg-yellow-dark text-vs flex justify-center items-center ml-1 font-normal text-white'>3</div>
-                        </li>
-                        <li class='mr-5 text-gray-50 flex flex-row items-center'>
-                            <a href="#support">Support tickets</a>
-                            <div class='w-3 h-3 rounded-l-full rounded-r-full bg-yellow-dark text-vs flex justify-center items-center ml-1 font-normal text-white'>3</div>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#system">System health</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#deploy">Deployable Applications</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#billings">Billings</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#settings">Settings</a>
-                        </li>
-                    </ul>
+                <div class='flex flex-row py-2 items-center'>
+                    <p class='mr-4 font-normal opacity-75 hidden lg:block'>John Dey</p>
+                    <a class='mr-2 header-nav-toggle' href="#profile">
+                        <img class='w-8 h-8' src="./images/icons/Avatar.png" alt="Avatar">
+                    </a>
+                    <div class='mr-4 h-6 border-l-2 border-white opacity-75 hidden lg:block'></div>
+                    <div class='relative hidden lg:block'>
+                        <a class='mr-4 hover:text-gray-400' href="#notifications">
+                            <i class="fal fa-bell"></i>
+                        </a>
+                        <div class='absolute w-2 h-2 rounded-l-full rounded-r-full bg-blue-color text-vs flex justify-center items-center ml-1 top-0'></div>
+                    </div>
+                    <a class='cog-color font-medium hover:text-gray-400' href="#settings">
+                        <i class="fal fa-cog"></i>
+                    </a>
                 </div>
+                <ul class='hidden text-sm font-semibold header-nav fixed left-0 px-10 pt-10 mt-12 pb-12 w-full nav-blue'>
+                    <li class="mr-8">
+                        <p class="mb-6 lg:mb-0 relative block" href="#services">John Dey</p>
+                    </li>
+                    <li class="mr-8">
+                        <a class="mb-6 mr-2 lg:mb-0 nav-link relative block" href="#experience">
+                            <i class="fal fa-bell"></i>Notifications</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <div class='container mx-auto px-6 mb-16'>
+            <div class='w-full my-3 border-b-2'></div>
+            <div class='flex flex-start'>
+                <ul class='flex lg:flex-row flex-col text-lg'>
+                    <li class='mr-5 font-bold flex flex-row items-center'>
+                        <a href="#customer">Customers</a>
+                        <div class='w-3 h-3 rounded-l-full rounded-r-full bg-yellow-dark text-vs flex justify-center items-center ml-1 font-normal text-white'>3</div>
+                    </li>
+                    <li class='mr-5 text-gray-50 flex flex-row items-center hover:text-white'>
+                        <a href="#support">Support tickets</a>
+                        <div class='w-3 h-3 rounded-l-full rounded-r-full bg-yellow-dark text-vs flex justify-center items-center ml-1 font-normal text-white'>3</div>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#system">System health</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#deploy">Deployable Applications</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#billings">Billings</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#settings">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class='content'>
+        <div class='container-large mx-auto px-6 mb-16'>
             <div class='flex lg:flex-row flex-col'>
                 <div class='lg:w-2/3 w-full mt-6'>
                     <h2 class='text-4xl text-blue-1200 mb-4'>Services</h2>
-                    <div class='flex flex-row justify-between flex-wrap'>
-                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                    <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                        <div class='border-1 border-gray-600 shadow-sm rounded-tr-bl-lg'>
                             <div class='flex flex-row pt-2 px-2 justify-between items-start'>
                                 <p class='text-md text-purple-1200 opacity-50'>PHP 7.4</p>
                                 <img class='w-8 h-4 mt-1 opacity-50' src="./images/logos/php-logo.png" alt="php logo">
                             </div>
                             <canvas id="phpChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                        <div class='border-1 border-gray-600 shadow-sm rounded-tr-bl-lg'>
                             <div class='flex flex-row pt-2 px-2 justify-between'>
                                 <p class='text-md text-purple-1200 opacity-50'>MuSQL 8</p>
                                 <img src="./images/logos/mysql.png" alt="mySQL logo">
                             </div>
                             <canvas id="sqlChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='lg:w-64 w-full border-2 border-gray-400 rounded-top-right-bottom-left mt-8 lg:mt-0'>
+                        <div class='border-1 border-gray-600 shadow-sm rounded-tr-bl-lg'>
                             <div class='flex flex-row pt-2 px-2 justify-between'>
                                 <p class='text-md text-purple-1200 opacity-50'>NGINX</p>
                                 <img src="./images/logos/NGINX_logo_cmyk-01.png" alt="NGINX logo">
                             </div>
                             <canvas id="nginxChart" width="400" height="120"></canvas>
                         </div>
-                        <div class='lg:w-64 w-full  border-2 border-gray-400 rounded-top-right-bottom-left mt-8'>
+                        <div class='border-1 border-gray-600 shadow-sm rounded-tr-bl-lg'>
                             <div class='flex flex-row pt-2 px-2 justify-between'>
                                 <p class='text-md text-purple-1200 opacity-50'>PHP 7.4</p>
                                 <img class='w-8 h-4 mt-1 opacity-50' src="./images/logos/php-logo.png" alt="php logo">
@@ -116,9 +116,9 @@
                         </div>
                     </div>
                     <h2 class='text-4xl text-blue-1200 mb-4 mt-8'>Management</h2>
-                    <div class='bg-gray-light rounded-top-right-bottom-left p-8 shadow-lg'>
-                        <div class='flex lg:flex-row flex-col'>
-                            <div class='bg-white rounded-top-right-bottom-left p-4 shadow-lg lg:w-64 w-full mr-10'>
+                    <div class='bg-gray-light rounded-tr-bl-lg p-8 shadow-sm'>
+                        <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                            <div class='bg-white rounded-tr-bl-lg p-4 shadow-sm'>
                                 <div class='flex flex-row justify-start'>
                                     <p class='text-lg text-dark-gray opacity-75'>Backups</p>
                                 </div>
@@ -126,7 +126,7 @@
                                     <i class="fas fa-bars text-blue-color text-4xl"></i>
                                 </div>
                             </div>
-                            <div class='bg-white rounded-top-right-bottom-left p-4 shadow-lg lg:w-64 w-full mt-6 lg:mt-0 mr-10'>
+                            <div class='bg-white rounded-tr-bl-lg p-4 shadow-sm'>
                                 <div class='flex flex-row justify-start'>
                                     <p class='text-lg text-dark-gray opacity-75'>Emails</p>
                                 </div>
@@ -134,7 +134,7 @@
                                     <i class="far fa-envelope text-blue-color text-4xl"></i>
                                 </div>
                             </div>
-                            <div class='bg-white rounded-top-right-bottom-left p-4 shadow-lg lg:w-64 w-full mt-6 lg:mt-0'>
+                            <div class='bg-white rounded-tr-bl-lg p-4 shadow-sm'>
                                 <div class='flex flex-row justify-start'>
                                     <p class='text-lg text-dark-gray opacity-75'>Health Center</p>
                                 </div>
@@ -147,12 +147,12 @@
 
                 </div>
                 <div class='lg:w-1/3 w-full lg:pl-10 pl-0 mt-10 lg:mt-0'>
-                    <div class="rounded-top-right-bottom-left shadow-lg mt-2 pb-10">
+                    <div class="rounded-tr-bl-lg shadow-sm mt-2 pb-10">
                         <div class='flex lg:flex-row flex-col lg:justify-around text-center lg:text-center'>
                             <h2 class='text-purple-1200 text-4xl'>Activity</h2>
                             <p class='text-dark-gray text-xs lg:pt-6 pt-2'>Updated 3 min ago</p>
                         </div>
-                        <div class='bg-gray-light rounded-top-right-bottom-left pt-5 pb-8 mt-5'>
+                        <div class='bg-gray-light rounded-tr-bl-lg pt-5 pb-8 mt-5'>
                             <div class="flex lg:flex-row flex-col px-6">
                                 <div class='flex flex-col lg:w-1/5 w-full'>
                                     <img class='w-8 h-8' src="./images/icons/Avatar.png" alt="Avatar">
@@ -168,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bg-gray-light rounded-top-right-bottom-left pt-5 pb-8 mt-5'>
+                        <div class='bg-gray-light rounded-tr-bl-lg pt-5 pb-8 mt-5'>
                             <div class="flex lg:flex-row flex-col px-6">
                                 <div class='flex flex-col lg:w-1/5 w-full'>
                                     <img class='w-8 h-8' src="./images/icons/Avatar.png" alt="Avatar">
@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='bg-gray-light rounded-top-right-bottom-left pt-5 pb-8 mt-5'>
+                        <div class='bg-gray-light rounded-tr-bl-lg pt-5 pb-8 mt-5'>
                             <div class="flex lg:flex-row flex-col px-6">
                                 <div class='flex flex-col lg:w-1/5 w-full'>
                                     <img class='w-8 h-8' src="./images/icons/Avatar.png" alt="Avatar">
@@ -200,7 +200,9 @@
                                 </div>
                             </div>
                         </div>
-                        <a href=""><p class='text-sm text-dark-gray font-bold text-center mt-5 lg:mt-5'>View All</p></a>
+                        <a href="">
+                            <p class='text-sm text-dark-gray font-bold text-center mt-5 lg:mt-5'>View All</p>
+                        </a>
                         <div class='flex flex-row justify-center'>
                             <div class='w-2 h-2 rounded-l-full rounded-r-full bg-blue-color text-vs flex justify-center items-center font-normal text-white'></div>
                             <div class='w-2 h-2 rounded-l-full rounded-r-full bg-dark-grey text-vs flex justify-center items-center ml-1 font-normal text-white'></div>
@@ -210,41 +212,41 @@
                 </div>
             </div>
         </div>
-        <footer class='py-8 nav-blue'>
-            <div class='container mx-auto px-6 text-white'>
-                <div class='flex flex-row justify-between'>
-                    <div class='flex items-center'>
-                        <h2 class='text-xl opacity-75'>Amino 2020</h2>
-                    </div>
-                    <div class='flex flex-row py-2 items-center'>
-                        <a href="#support">
-                            <p class='lg:mr-20 mr-3 font-normal opacity-75'>Support</p>
-                        </a>
-                        <a href="#settings">
-                            <i class="fal fa-cog cog-color  font-medium"></i>
-                        </a>
-                    </div>
+    </div>
+    <footer class='py-8 nav-blue footer'>
+        <div class='container-large-large mx-auto px-6 text-white'>
+            <div class='flex flex-row justify-between'>
+                <div class='flex items-center'>
+                    <h2 class='text-xl opacity-75'>Amino 2020</h2>
                 </div>
-                <div class='w-full h-xs my-3 bg-white'></div>
-                <div class='flex flex-start'>
-                    <ul class='flex lg:flex-row flex-col text-lg'>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#support">Terms of Service</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#system">Privacy policy</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#deploy">Cookie policy</a>
-                        </li>
-                        <li class='mr-5 text-gray-50'>
-                            <a href="#billings">Support</a>
-                        </li>
-                    </ul>
+                <div class='flex flex-row py-2 items-center'>
+                    <a class='lg:mr-20 mr-3 font-normal opacity-75 hover:opacity-100' href="#support">
+                        Support
+                    </a>
+                    <a class='cog-color font-medium hover:text-gray-400' href="#settings">
+                        <i class="fal fa-cog"></i>
+                    </a>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class='w-full my-3 border-b-2'></div>
+            <div class='flex flex-start'>
+                <ul class='flex lg:flex-row flex-col text-lg'>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#support">Terms of Service</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#system">Privacy policy</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#deploy">Cookie policy</a>
+                    </li>
+                    <li class='mr-5 text-gray-50 hover:text-white'>
+                        <a href="#billings">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>

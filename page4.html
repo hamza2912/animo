@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <div class='w-full overflow-hidden bg-white'>
-        <div class='lg:container lg:mx-auto lg:px-32 px-0 lg:my-32 my-0 lg:h-screen'>
+    <div class='content'>
+        <div class='container-medium mx-auto lg:my-32 my-0'>
             <div class='bg-white rounded-r-lg shadow-xl flex lg:flex-row flex-col'>
                 <div class='lg:w-2/5 w-full bg-gradient-blue flex justify-center items-center py-10 lg:py-0'>
                     <img src="./images/logos/Amino-Cloud-white.png" alt="Amino CLoud Image">
@@ -31,17 +31,19 @@
                         <h2 class='text-blue-1200 font-semibold text-2xl'>Github key</h2>
                         <p class='mb-4 text-blue-1200 font-semibold text-base'>Add following key to your github account</p>
                         <div class="mb-10">
-                            <div class="w-full py-3 lg:pl-10 pl-3 border-grey rounded-xlg">
-                                <p class='text-blue-1200 font-semibold text-base'>qMzxsyMBpr9OPi0DjUuOiJS4YIcOUJ78qMzxsyMBpr9 OPi0DjUuOiJS4YIcOUJ78qMzxsyMBpr9OPi0DjUuOiJS 4YIcOUJ78qMzxsyMBpr9OPi0DjUuOiJS4YIcOUJ78</p>
+                            <div class="w-full py-3 lg:px-10 px-3 border-grey rounded-xl">
+                                <textarea class='text-blue-1200 font-semibold text-base w-full focus:outline-none focus:shadow-outline-none' name="" id=""
+                                    cols="30" rows="3" placeholder="qMzxsyMBpr9OPi0DjUuOiJS4YIcOUJ78qMzxsyMBpr9 OPi0DjUuOiJS4YIcOUJ78qMzxsy"></textarea>
                             </div>
                         </div>
                         <h2 class='mb-4 text-blue-1200 font-semibold text-2xl'>Git Repository URL</h2>
                         <div class="mb-10">
-                            <input class="w-full py-3 pl-6 border-grey rounded-xlg input-form focus:outline-none focus:shadow-outline-none" id="text" type="text"
-                                placeholder="e.g git@github.com">
+                            <input class="w-full py-3 pl-6 border-grey rounded-xl input-form focus:outline-none focus:shadow-outline-none" id="text"
+                                type="text" placeholder="e.g git@github.com">
                         </div>
                         <div>
-                            <button class="bg-blue-button hover:bg-blue-500 text-white font-semibold py-3 text-lg rounded-xlg lg:w-2/5 w-full" type="button">
+                            <button class="bg-blue-button hover:bg-blue-500 text-white font-semibold py-3 text-lg rounded-xl lg:w-2/5 w-full focus:outline-none"
+                                type="button">
                                 Deploy
                             </button>
                         </div>
