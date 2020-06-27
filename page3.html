@@ -8,9 +8,11 @@
     <title>Page 3</title>
     <!-- Owl-Carousel css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
     <!-- Tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Main css -->
@@ -30,50 +32,59 @@
                     <form>
                         <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Configure your service</h2>
                         <div class="mb-8 flex flex-row flex-wrap service justify-between">
-                            <a class='md:w-1/5 w-1/4 p-3 border-grey rounded-xl flex items-center justify-center cursor-pointer active-service shadow-lg'>
-                                <img src="./images/logos/git-logo.png" alt="Git Logo">
+                            <a
+                                class='md:w-1/5 w-1/4 px-3 py-2 h-16 border-service border-service-active rounded-xl flex items-center justify-center cursor-pointer active-service shadow-lg'>
+                                <img src="./images/logos/git-logo.svg" class="max-h-full" alt="Git Logo">
                             </a>
-                            <a class='md:w-1/5 w-1/4 p-3 border-grey rounded-xl flex items-center justify-center cursor-pointer'>
-                                <img src="./images/logos/MB-logo.png" alt="mongoDB Logo">
+                            <a
+                                class='md:w-1/5 w-1/4 px-3 py-2 h-16 border-service rounded-xl flex items-center justify-center cursor-pointer'>
+                                <img src="./images/logos/mariadb-logo.svg" class="max-h-full" alt="mongoDB Logo">
                             </a>
-                            <a class='md:w-1/5 w-1/4 p-3 border-grey rounded-xl flex items-center justify-center cursor-pointer'>
-                                <img src="./images/logos/php-logo.png" alt="php Logo">
+                            <a
+                                class='md:w-1/5 w-1/4 px-5 py-2 h-16 border-service rounded-xl flex items-center justify-center cursor-pointer'>
+                                <img src="./images/logos/php-logo.svg" class="max-h-full" alt="php Logo">
                             </a>
-                            <div class='border-l-2 border-gray-300 lg:h-20 h-12 self-center'></div>
-                            <button disabled class='md:w-1/5 w-1/4 p-3 mt-3 md:mt-0 border-grey rounded-xl flex items-center justify-center cursor-pointer'>
-                                <img src="./images/logos/node-logo.png" alt="nodeJS Logo">
+                            <div class='border-l-2 border-gray-300 lg:h-16 h-12 self-center'></div>
+                            <button disabled
+                                class='md:w-1/5 w-1/4 px-3 py-2 h-16 mt-3 md:mt-0  rounded-xl flex items-center justify-center cursor-default bg-gray-200'>
+                                <img src="./images/logos/node-logo.svg" class="grayscale max-h-full" alt="nodeJS Logo">
                             </button>
                         </div>
-                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>What version of PHP?</h2>
+                        <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Which version of PHP?</h2>
                         <div class="mb-8">
-                            <input class="w-full py-3 pl-6 border-grey rounded-xl input-form focus:outline-none focus:shadow-outline-none" type="text"
-                                placeholder="PHP 7.4">
+                            <input
+                                class="w-full py-3 px-6 border-input rounded-xl input-form focus:outline-none focus:shadow-outline-none"
+                                type="text" placeholder="PHP 7.4">
                         </div>
                         <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Public path</h2>
                         <div class="mb-8">
-                            <input class="w-full py-3 pl-6 border-grey rounded-xl input-form focus:outline-none focus:shadow-outline-none" id="text"
-                                type="text" placeholder="/path">
+                            <input
+                                class="w-full py-3 px-6 border-input rounded-xl input-form focus:outline-none focus:shadow-outline-none"
+                                id="text" type="text" placeholder="/path">
                         </div>
                         <h2 class='mb-3 text-blue-1200 font-semibold text-2xl'>Deploying file or Git project</h2>
                         <div class="mb-8 flex lg:flex-row flex-col justify-between text-blue-1200">
                             <div class='lg:w-1/2 w-full lg:pr-5 pr-0'>
-                                <button class="w-full py-3 border-grey rounded-xl input-form font-semibold">
+                                <button class="w-full py-3 border-input rounded-xl input-form font-semibold">
                                     Zip
-                                    <i class="fas fa-arrow-alt-up arrow-color"></i>
+                                    <i class="fas fa-arrow-alt-up text-gray-60"></i>
                                 </button>
                             </div>
                             <div class='lg:w-1/2 w-full lg:pl-5 pl-0 mt-2 lg:mt-0'>
-                                <button class="w-full py-3 border-grey rounded-xl input-form font-semibold">
+                                <button class="w-full py-3 border-input rounded-xl input-form font-semibold">
                                     Git
-                                    <i class="fas fa-arrow-alt-up arrow-color"></i>
+                                    <i class="fas fa-arrow-alt-up text-gray-60"></i>
                                 </button>
                             </div>
                         </div>
                         <div>
-                            <button class="bg-blue-button hover:bg-blue-500 text-white font-semibold py-3 text-lg px-12 rounded-xl lg:w-2/5 w-full focus:outline-none"
-                                type="button">
-                                Submit
-                            </button>
+                            <a href="page4.html">
+                                <button
+                                    class="transition duration-100 ease-in-out bg-blue-button hover:bg-blue-600 active:bg-blue-200 text-white font-semibold py-3 text-lg rounded-xl lg:w-2/5 w-full focus:outline-none"
+                                    type="button">
+                                    Submit
+                                </button>
+                            </a>
                         </div>
                     </form>
                 </div>

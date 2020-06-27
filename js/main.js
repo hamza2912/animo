@@ -20,122 +20,60 @@ $(document).ready(function () {
     });
 
     $('.service a').on('click', function () {
-        $('.service a').removeClass('active-service');
+        $('.service a').removeClass('border-service-active');
         $('.service a').removeClass('shadow-lg');
-        $(this).addClass('active-service');
+        $(this).addClass('border-service-active');
         $(this).addClass('shadow-lg');
     });
 
-    var phpChart = $('#phpChart');
-    var myChart = new Chart(phpChart, {
-        type: 'line',
-        data: {
-            datasets: [{
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    '#1D71B8'
-                ] 
-            }]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                    },
-                    ticks: {
-                        display: false
-                    },
-                }]
+    $('.service-chart').each((index, chart) => {
+        var myChart = new Chart(chart, {
+            type: 'line',
+            data: {
+                labels: [1,2,3,4,5,6,7,8,9,10],
+                datasets: [{
+                    data: [86,100,106,106,107,111,120,125,120,125],
+                    backgroundColor: "#1D71B8",
+                    clip: {left: 5, top: false, right: -2, bottom: 50},
+                  },
+                ]
+              },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                elements: {
+                    point:{
+                        radius: 0
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: -10,
+                        bottom: -10
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                        },
+                        ticks: {
+                            display: false,
+                        },
+                    }],
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        },
+                        ticks: {
+                            display: false,
+                        },
+                    }]
+                }
             }
-        }
-    });
-
-    var sqlChart = $('#sqlChart');
-    var myChart = new Chart(sqlChart, {
-        type: 'line',
-        data: {
-            datasets: [{
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    '#1D71B8'
-                ] 
-            }]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                    },
-                    ticks: {
-                        display: false
-                    },
-                }]
-            }
-        }
-    });
-
-    var nginxChart = $('#nginxChart');
-    var myChart = new Chart(nginxChart, {
-        type: 'line',
-        data: {
-            datasets: [{
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    '#1D71B8'
-                ] 
-            }]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                    },
-                    ticks: {
-                        display: false
-                    },
-                }]
-            }
-        }
-    });
-
-    var phpChart2 = $('#phpChart2');
-    var myChart = new Chart(phpChart2, {
-        type: 'line',
-        data: {
-            datasets: [{
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    '#1D71B8'
-                ] 
-            }]
-        },
-        options: {
-            legend: {
-                display: false
-            },
-            scales: {
-                yAxes: [{
-                    gridLines: {
-                        display: false,
-                    },
-                    ticks: {
-                        display: false
-                    },
-                }]
-            }
-        }
-    });
+        });
+    })
 
 });

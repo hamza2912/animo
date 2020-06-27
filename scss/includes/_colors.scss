@@ -1,0 +1,98 @@
+.bg-overlay {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.bg-gray {
+    background-color: $bg-gray;
+}
+
+.bg-gray-light {
+    background-color: #F0F0F0;
+}
+
+.bg-blue-light {
+    background-color: #F5F6FA;
+}
+
+.bg-dark-gray {
+    background-color: #4D4F5C;
+}
+
+.bg-green-light {
+    background-color: #5FD99B;
+}
+
+.bg-yellow-dark {
+    background-color: #F49507;
+}
+
+.bg-blue-color {
+    background-color: $blue-color;
+}
+
+.bg-blue-button {
+    background-color: $blue-color;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-dark-blue {
+    background-color: $dark-blue;
+}
+
+.bg-gradient-blue {
+    background: rgb(29,113,184);
+    background: linear-gradient(120deg, rgba(29,113,184,1) 0%, rgba(13,35,92,1) 100%);
+}
+
+.text-blue-1200 {
+    color: $dark-blue;
+}
+
+.text-blue-color {
+    color: $blue-color;
+}
+
+.text-dark-grey {
+    color: $dark-grey;
+}
+
+.text-dark-gray {
+    color: #4D4F5C;
+}
+
+.text-gray-50 {
+    color: #E5E5E5;
+}
+
+.text-gray-60 {
+    color: #E7E7E7;
+}
+
+.text-gray-70 {
+    color: #D3D3D3;
+}
+
+.text-purple-1200 {
+    color: #5454D9;
+}
+
+.grayscale {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+}

@@ -1,11 +1,11 @@
 
-/* The switch - the box around the slider */
+/* The switch - the box around the switch-slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
+    width: 45px;
     height: 20px;
-    
+
     &input{
         opacity: 0;
         width: 0;
@@ -13,8 +13,8 @@
     }
 }
 
-/* The slider */
-.slider {
+/* The switch-slider */
+.switch-slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -24,37 +24,53 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    
+
     &:before{
         position: absolute;
         content: "";
-        height: 14px;
-        width: 14px;
+        height: 16px;
+        width: 16px;
         left: 4px;
-        bottom: 4px;
-        background-color: #5FD99B;
+        bottom: 2px;
+        background-color: #888;
         -webkit-transition: .4s;
-        transition: .4s; 
+        transition: .4s;
+    }
+
+    &:after {
+        content: 'Off';
+        position: absolute;
+        top: 2px;
+        right: 7px;
+        color: #797979;
+        font-size: 12px;
     }
 }
 
 
-input:checked + .slider {
+input:checked + .switch-slider {
     background-color: $dark-grey;
 }
 
-input:checked + .slider:before {
-    -webkit-transform: translateX(18px);
-    -ms-transform: translateX(18px);
-    transform: translateX(18px);
+input:checked + .switch-slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+    background-color: #5FD99B;
 }
 
-/* Rounded sliders */
-.slider.round {
+input:checked + .switch-slider:after {
+    content: 'On';
+    left: 6px;
+    color: #D8D8D8;
+}
+
+/* Rounded switch-sliders */
+.switch-slider.round {
     border-radius: 34px;
-    
+
     &:before{
         border-radius: 50%;
     }
-    
+
 }

@@ -31,10 +31,10 @@
     }
     &:focus {
         border: 1px solid transparent;
-        -webkit-border-image-source: 
-            -webkit-linear-gradient(to right, rgb(159,172,230),  rgb(116,235,213)); 
+        -webkit-border-image-source:
+            -webkit-linear-gradient(to right, rgb(159,172,230),  rgb(116,235,213));
         -moz-border-image-source:
-            -moz-linear-gradient(to right, rgb(159,172,230),  rgb(116,235,213)); 
+            -moz-linear-gradient(to right, rgb(159,172,230),  rgb(116,235,213));
         -o-border-image-source:
             -o-linear-gradient(to right, rgb(159,172,230),  rgb(116,235,213));
         border-image-source:
@@ -63,7 +63,7 @@
     background-image :      -o-linear-gradient(to left, #74ebd5,#9face6);
     background-image : -webkit-linear-gradient(to left, #74ebd5,#9face6);
     background-image :         linear-gradient(to left, #74ebd5,#9face6);
-    
+
 }
 input[type=checkbox]:not(old){
     width     : 2em;
@@ -116,7 +116,7 @@ input[type=checkbox]:not(old){
     color: #555;
 }
 .term-service {
-    color: #555; 
+    color: #555;
 }
 
 .loginhere {
@@ -140,6 +140,5 @@ input[type=checkbox]:not(old){
   }
 
 
-  
 
-  
+
