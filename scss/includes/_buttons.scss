@@ -1,0 +1,63 @@
+.btn {
+    @apply transition duration-100 ease-in-out text-white font-semibold py-3 text-lg rounded-xl px-8;
+}
+
+$types: 'primary'$primary,
+'secondary'$black,
+'success'$success,
+'warning'$warning;
+
+@each $label,
+$color in $types {
+    .btn-#{$label} {
+        background: #{$color};
+
+        &:hover {
+            background: darken($primary, 5%);
+        }
+
+        &:active,
+        &:focus {
+            background: darken($primary, 10%);
+            @apply outline-none;
+        }
+    }
+}
+
+.btn-link {
+    color: $primary;
+
+    &:hover {
+        @apply underline;
+        color: darken($primary, 5%);
+    }
+
+    &:active,
+    &:focus {
+        color: darken($primary, 10%);
+        @apply outline-none;
+    }
+}
+
+.btn-outline {
+    border: 2px solid $primary;
+    color: $primary;
+
+    &:hover {
+        background: transparentize($primary, 0.9);
+    }
+
+    &:active,
+    &:focus {
+        background: transparentize($primary, 0.8);
+        @apply outline-none;
+    }
+}
+
+.btn-wide {
+    @apply px-16;
+}
+
+.btn-full {
+    @apply w-full;
+}

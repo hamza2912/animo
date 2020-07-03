@@ -1,0 +1,36 @@
+.text-primary-dark {
+    color: $primary-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-dark;
+}
+
+h1 {
+    @apply font-semibold text-5xl;
+}
+
+h2 {
+    @apply font-semibold text-4xl;
+}
+
+h3 {
+    @apply font-semibold text-3xl;
+}
+
+h4 {
+    @apply font-semibold text-2xl;
+}
+
+h5 {
+    @apply font-semibold text-xl;
+}
+
+h6 {
+    @apply font-semibold text-lg;
+}
+
+.lead {
+    color: $primary-dark;
+    @apply font-semibold;
+}

@@ -1,9 +1,16 @@
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // Common
 @import 'includes/variables';
 @import 'includes/mixins';
 @import 'includes/colors';
 @import 'includes/global';
 @import 'includes/inputs';
+@import 'includes/text';
+@import 'includes/buttons';
 @import 'includes/nav';
 @import 'includes/switch';
 
@@ -22,7 +29,7 @@
   border: 3px solid #E7E7E7;
 
   &-active {
-    border-color: $blue-color;
+    border-color: $primary;
   }
 }
 

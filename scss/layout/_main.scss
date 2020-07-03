@@ -15,8 +15,8 @@
     box-sizing: border-box;
     font-size: 14px;
     font-weight: 500;
-    color: $black-color;
-    @include input-placeholder($grey-light);
+    color: $black;
+    @include input-placeholder($gray-light);
 	&::-webkit-input-placeholder {
         font-weight: 500;
 	}
@@ -42,7 +42,7 @@
         -webkit-border-image-slice: 1;
         border-image-slice: 1;
         @include border-radius(5px);
-        @include input-placeholder($black-color);
+        @include input-placeholder($black);
         background-origin: border-box;
         background-clip: content-box, border-box;
     }
@@ -103,7 +103,7 @@ input[type=checkbox]:not(old){
   input[type=checkbox]:not(old):checked + label > span:before{
       content     : '\f26b';
       display     : block;
-      color       : $black-color;
+      color       : $black;
       font-size   : 11px;
       line-height : 1.2;
       text-align  : center;
@@ -128,7 +128,7 @@ input[type=checkbox]:not(old){
 }
 .loginhere-link {
     font-weight: 700;
-    color: $black-color;
+    color: $black;
 }
 .field-icon {
     float: right;
