@@ -14,6 +14,26 @@ select {
   @apply w-full py-3 px-6 rounded-xl;
   border: 3px solid $gray-light;
 
+  &.form-control-material {
+    position: relative;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding-left: 0;
+
+    &:after {
+      content: '';
+      bottom: 0;
+      height: 2px;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 17px;
+      color: #bbb;
+      font-weight: 400;
+    }
+  }
+
   &:focus {
     @apply outline-none;
     border-color: $primary;
