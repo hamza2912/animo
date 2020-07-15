@@ -8,6 +8,28 @@ select {
   &:valid {
     color: #000;
   }
+
+  &.form-control {
+    @apply appearance-none;
+
+    &:first-child {
+      before: 'baba';
+    }
+  }
+}
+
+.select-list {
+  @apply relative;
+
+  &:hover {
+    .far {
+      @apply opacity-100;
+    }
+  }
+
+  .far {
+    @apply absolute right-0 top-0 my-5 mx-6 opacity-50;
+  }
 }
 
 .form-control {
